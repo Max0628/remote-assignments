@@ -15,6 +15,7 @@ nav {
 }
 
 nav a {
+  color: black;
   margin: 10px;
   text-decoration: none;
 }
@@ -40,6 +41,11 @@ h1 {
 }
 
 /* header setting */
+
+body {
+  min-width: 515px;
+  margin: 0;
+}
 
 header {
   height: 20vh;
@@ -89,6 +95,7 @@ div[id="button"] {
   margin-top: 3rem;
 }
 div a {
+  color: black;
   width: 6rem;
   height: 2.5rem;
   padding: 1rem;
