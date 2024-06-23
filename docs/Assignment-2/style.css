@@ -72,9 +72,10 @@ section {
 #boxes-container {
   display: flex;
   flex-wrap: wrap;
-  min-height: 70%;
+  height: 65%;
   /* width setting */
   width: 100%;
+  max-height: 70%;
   max-width: 1200px;
 }
 
