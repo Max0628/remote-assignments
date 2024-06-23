@@ -170,6 +170,11 @@ body {
   display: flex;
   justify-content: center;
 }
+
+.section-apps button {
+  display: flex;
+  width: 20%;
+}
 .section-apps {
   display: flex;
   flex-direction: column;
