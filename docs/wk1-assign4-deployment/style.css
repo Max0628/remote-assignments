@@ -1,0 +1,533 @@
+/* basic setting */
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+/* buttons and color */
+button[class="blue"] {
+  display: flex;
+  justify-content: center;
+  /* padding: 0.8vh 1vh; */
+  border-radius: 5px;
+  text-decoration: none;
+  list-style-type: none;
+  border: none;
+  color: white;
+  background-color: #3373e8;
+}
+
+button a {
+  padding: 0.8vh 1vh;
+  font-size: 1rem;
+  list-style-type: none;
+  text-decoration: none;
+  border: none;
+  color: white;
+  /* background-color: #3373e8; */
+}
+
+body {
+  /* background-color: #eeeeee; */
+  background-color: white;
+}
+
+/* header and navbar */
+
+#main-nav {
+  display: flex;
+  background-color: #ffffff;
+}
+#main-nav img {
+  width: 300px;
+  margin: 1rem;
+}
+#main-nav ul {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+#main-nav ul a {
+  color: grey;
+}
+
+#main-nav li {
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+  justify-content: baseline;
+  position: relative;
+}
+
+#main-nav p {
+  padding-top: 1rem;
+  font-size: medium;
+  font-weight: bold;
+  color: gray;
+}
+
+#main-nav a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* header and navbar  end */
+
+/* Rewatch Google I/O 2024 */
+
+#mask {
+  display: block;
+  height: 50rem;
+  justify-content: space-between;
+  background-color: #eeeeee;
+}
+
+#blue-nav {
+  font-size: medium;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  color: white;
+  background-color: #3373e8;
+}
+
+#blue-nav p {
+  width: 100%;
+  height: 30px;
+}
+
+#google-pic {
+  width: 50%;
+}
+
+#google-pic img {
+  margin: 10rem;
+}
+
+#text-img {
+  display: flex;
+  height: 100%;
+}
+
+#h3-p-button {
+  margin-left: 3rem;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+#h3-p-button h3 {
+  margin: 4em 4rem 0rem 4rem;
+  font-size: 4rem;
+}
+
+#h3-p-button p {
+  font-size: 1rem;
+  font-weight: bold;
+  width: 80%;
+  height: 20;
+  margin-left: 4rem;
+}
+
+#h3-p-button button {
+  display: flex;
+  background-color: #3373e8;
+  color: white;
+  border: none;
+  width: 180px;
+  margin-left: 4rem;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#mask h2 {
+  width: 100%;
+  padding: 1rem;
+  color: white;
+  background-color: #3373e8;
+}
+/* Rewatch Google I/O 2024 end */
+
+/* pics */
+#google-dev {
+  width: 15rem;
+  margin: 0.5rem;
+}
+
+/* setting of apps blocks */
+/* Start building today */
+
+.app-group {
+  display: flex;
+  justify-content: center;
+}
+
+.section-apps button {
+  display: flex;
+  width: 20%;
+}
+.section-apps {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section-apps h2 {
+  margin: 1rem;
+  font-size: 3rem;
+  font-weight: bold;
+}
+.apps {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+}
+.app {
+  width: 20%;
+  margin: 1rem;
+  display: flex;
+  padding: 1rem;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  border-radius: 10%;
+  border: 1px solid rgb(217, 211, 211);
+}
+
+.app img {
+  display: inline-block;
+  width: 30%;
+}
+
+.app p {
+  width: 80%;
+}
+.section-apps-button {
+  width: 300px;
+  height: 50px;
+}
+
+.section-apps-button p {
+  font-size: 1rem;
+}
+
+/* What are you developing for?   */
+#dev-field {
+  background-color: #ffffff;
+}
+
+#dev-field h2 {
+  font-size: 3rem;
+  text-align: center;
+  margin: 1rem;
+}
+
+#dev-field h3 {
+  font-size: 1.75rem;
+  margin: 1rem;
+  text-align: center;
+  font-weight: lighter;
+}
+
+.p-img p {
+  font-size: larger;
+  width: 70%;
+}
+
+.p-img {
+  display: flex;
+  justify-content: space-around;
+}
+.p-img img {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  margin: 1rem;
+}
+
+#dev-field-container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1rem;
+}
+
+.dev-box {
+  display: flex;
+  flex-direction: column;
+  flex-basis: calc(50% - 20px);
+  margin: 10px;
+  border-radius: 5%;
+  border: 1px solid rgb(217, 211, 211);
+  padding: 1rem;
+}
+
+.dev-box h4 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0.5rem 1rem;
+}
+
+.dev-box button {
+  width: 150px;
+}
+
+.section-apps-button {
+  width: 250px;
+}
+/* What are you developing for? end  */
+
+/* Trending news */
+#news {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+}
+
+#news h3 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin: 1rem;
+}
+#Trending-news-h2 {
+  font-size: 2rem;
+  font-weight: 400;
+  margin-left: 3rem;
+}
+.news-boxes {
+  display: flex;
+  justify-content: center;
+  margin: 2%;
+}
+
+.news-box {
+  width: 30%;
+  border-radius: 5%;
+  flex-wrap: wrap;
+  margin: 1rem;
+  border: 1px solid rgb(217, 211, 211);
+  overflow: hidden;
+}
+.news-box img {
+  width: 100%;
+  object-fit: cover;
+}
+.news-box h3,
+p,
+button {
+  width: 100%;
+  text-align: start;
+  margin: 1rem;
+  width: 200px;
+}
+
+.news-box h3 {
+  font-size: 2rem;
+  text-align: start;
+  width: 90%;
+  margin: 1rem;
+  color: #3373e8;
+}
+
+.news-box p {
+  text-align: start;
+  width: 90%;
+  margin: 1rem;
+}
+
+.news-box button {
+  font-size: 1rem;
+  padding: 1rem;
+  width: 160px;
+  height: 40px;
+  align-items: center;
+  cursor: pointer;
+}
+
+/* Trending news end*/
+
+/* Jellyfish part */
+
+#jellyfish-container {
+  display: flex;
+  justify-content: center;
+  background-color: #f1f3f4;
+  padding: 2%;
+}
+#jellyfish-text-container {
+  width: 50%;
+  width: 50%;
+}
+.jellyfish-box {
+  margin: 0.5rem;
+  border-radius: 5%;
+  background-color: #ffffff;
+  overflow: hidden;
+}
+
+#jellyfish-container img {
+  height: 20rem;
+  border-radius: 5%;
+  object-fit: cover;
+}
+#jellyfish-container h2 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin: 1rem;
+}
+#jellyfish-text-container p {
+  font-size: medium;
+  width: 90%;
+  margin: 1rem;
+}
+
+/* Jellyfish part1 end */
+
+#jellyfish-container {
+  display: flex;
+  background-color: #e0ebfd;
+}
+
+#jellyfish-container {
+  display: flex;
+}
+
+.jellyfish-box img {
+  width: 100%;
+}
+
+.jellyfish-box h3 {
+  font-size: 2rem;
+  font-weight: 400;
+  margin: 1rem;
+}
+
+.jellyfish-box h3 a {
+  text-decoration: none;
+  color: #3373e8;
+}
+.jellyfish-box p {
+  margin: 1rem;
+}
+.jellyfish-box button {
+  display: flex;
+  justify-content: baseline;
+  align-content: baseline;
+  height: 50px;
+  width: 200px;
+  margin: 1rem;
+}
+
+/* Jellyfish part2 end */
+
+/* Follow Google for Developers */
+
+#social-app-section h2 {
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+#social-app-section {
+  background-color: #ffffff;
+}
+
+#social-apps {
+  display: flex;
+  justify-content: center;
+}
+
+.social-app {
+  width: 20%;
+  margin: 1rem;
+  padding: 1rem;
+  text-align: center;
+  border: 1px solid rgb(217, 211, 211);
+  border-radius: 3%;
+}
+
+.social-app img {
+  display: flex;
+  justify-self: start;
+  width: 5rem;
+  margin-left: 1rem;
+}
+
+.social-app h3 {
+  text-align: start;
+  margin: 1rem;
+}
+
+.social-app p {
+  text-align: start;
+  margin: 1rem;
+}
+
+.social-app button {
+  justify-content: start;
+
+  background-color: #3373e8;
+  border: 1px solid rgb(217, 211, 211);
+}
+
+button[class="white"]:hover {
+  color: blue;
+}
+
+/* Follow Google for Developers end */
+
+/* footer */
+footer ul {
+  list-style-type: none;
+}
+
+footer p {
+  font-size: 1rem;
+  color: grey;
+}
+
+footer .box {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  /* border: 2px solid blue; */
+}
+.footer-container1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  /* border: 2px solid green; */
+}
+
+.footer-container2 {
+  display: flex;
+  justify-content: space-between;
+}
+
+footer hr {
+  border: 1px solid rgb(217, 211, 211);
+}
+
+footer img {
+  margin: 1rem;
+  width: 50%;
+}
+
+.footer-container2 ul {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.footer-container2 ul a {
+  text-decoration: none;
+  color: black;
+}
+/* footer end*/
