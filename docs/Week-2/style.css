@@ -1,0 +1,122 @@
+/* initial setting */
+* {
+  box-sizing: border-box;
+  font-family: "Times New Roman", Times, serif;
+  margin: 0;
+}
+
+/* top nav bar */
+nav {
+  height: 5vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #eeeeee;
+}
+
+nav a {
+  color: black;
+  margin: 10px;
+  text-decoration: none;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  text-decoration: none;
+  margin-right: 20px;
+}
+
+li {
+  margin: 10px;
+}
+
+li a {
+  text-decoration: none;
+}
+
+h1 {
+  align-content: center;
+}
+
+/* header setting */
+
+body {
+  min-width: 515px;
+  margin: 0;
+}
+
+header {
+  height: 20vh;
+  display: flex;
+  background-color: #cfdcec;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+/* setting of boxes */
+
+section {
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#section-title {
+  margin: 1rem;
+}
+
+.boxes-container {
+  display: flex;
+  flex-wrap: wrap;
+  height: 65%;
+  /* width setting */
+  width: 100%;
+  max-height: 70%;
+  max-width: 1200px;
+}
+
+.con2 {
+  display: none;
+}
+
+.box {
+  display: flex;
+  /* set every box's width to 50% of it's father's container's width minus 20px,because box's margin is 10px*/
+  flex-basis: calc(50% - 20px);
+  margin: 10px;
+  flex-direction: column;
+  background-color: #8b98a8;
+}
+
+.box div {
+  margin-top: 1rem;
+  text-align: center;
+  color: black;
+}
+
+/* setting of button */
+#button {
+  margin: 2rem 0rem;
+}
+
+div a {
+  width: 6rem;
+  height: 2.5rem;
+  padding: 1rem;
+  margin-top: 3rem;
+  color: black;
+  text-decoration: none;
+  background-color: #e0edfd;
+}
+
+/* use media query to RWD */
+/* when screen is bigger than 1200px,set boxes-container to 1200px */
+@media screen and (min-width: 1200px) {
+  #boxes-container {
+    width: 1200px;
+  }
+}
