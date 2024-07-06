@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <meta charset="UTF-8" />
+    <title>CookieView</title>
+  </head>
+  <body>
+<!--    expression false whill show here -->
+    <div th:unless="${#strings.isEmpty(name)}">
+      <h1>Congratulations!!</h1>
+      <h2 th:text="'You have a cookie, your name is ' + ${name}">
+        You have a cookie, your name is ...
+      </h2>
+    </div>
+<!--    expression true whill show here -->
+    <div th:if="${#strings.isEmpty(name)}">
+      <h1>Sorry, Broooo!!</h1>
+      <h2>You don't have a cookie!!!</h2>
+      <form action="/trackName" method="get">
+        <label for="inputName">Please enter your name!</label>
+        <input type="text" id="inputName" name="name" />
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
+
+<!--thymeleaf if/unless expression classmate teach me-->
+<!--in my old version, I use if to check client cookie if it's existed,if false,-->
+<!--redirect to "/trackName" to enter name,and redirect to myName show name on screen-->
