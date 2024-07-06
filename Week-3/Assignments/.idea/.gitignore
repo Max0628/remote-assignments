@@ -1,0 +1,57 @@
+# Default ignored files
+/shelf/
+/workspace.xml
+# Editor-based HTTP Client requests
+/httpRequests/
+# Datasource local storage ignored files
+/dataSources/
+/dataSources.local.xml
+
+# Ignore Maven target directory
+target/
+
+# Ignore IntelliJ IDEA project files
+.idea/
+*.iws
+*.iml
+*.ipr
+
+# Ignore Maven wrapper files except the script itself
+.mvn/wrapper/maven-wrapper.jar
+
+# Ignore macOS system files
+.DS_Store
+
+# Ignore Windows system files
+Thumbs.db
+
+# Ignore Eclipse project files
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings/
+.springBeans/
+.sts4-cache/
+
+# Ignore NetBeans project files
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+# Ignore Visual Studio Code project files
+.vscode/
+
+# Ignore log files
+*.log
+
+# Ignore build directories
+build/
+
+# Environment variables file
+.env
+
+# Node modules (if using Node.js)
+node_modules/
