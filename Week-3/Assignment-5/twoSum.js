@@ -19,4 +19,4 @@ function twoSum(nums, target) {
   return -1;
 }
 //console.log(twoSum([2, 7, 11, 15], 9)); // 應該返回 [0, 1]
-console.log(twoSum([7, 7, 11, 15, 1, 8, 3, 6, 4, 4], 16)); // 應該返回 [0, 1]
+//console.log(twoSum([7, 7, 11, 15, 1, 8, 3, 6, 4, 4], 16)); // 應該返回 [3,4]
