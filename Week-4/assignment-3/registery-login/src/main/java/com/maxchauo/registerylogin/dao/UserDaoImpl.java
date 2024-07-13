@@ -28,7 +28,7 @@ public class UserDaoImpl implements UserDao {
             try (ResultSet resultSet = statement.executeQuery()) {
                 if (resultSet.next()) {
 
-                    int getId = resultSet.getInt("id");
+                    int getId = resultSet.getInt("user_id");
                     String getEmail = resultSet.getString("email");
                     String getPassword = resultSet.getString("password");
                     return new User(getId, getEmail, getPassword);
@@ -77,7 +77,7 @@ public class UserDaoImpl implements UserDao {
             statement.setString(2, password);
             try (ResultSet resultSet = statement.executeQuery()) {
                 if (resultSet.next()) {
-                    int authId = resultSet.getInt("id");
+                    int authId = resultSet.getInt("user_id");
                     String authUserEmail = resultSet.getString("email");
                     String authPassword = resultSet.getString("password");
                     System.out.printf(email, password);
