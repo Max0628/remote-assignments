@@ -55,8 +55,8 @@ Thumbs.db
 ## VS Code
 .vscode/
 
-# Project-specific files
-HELP.md
+
+
 
 # Exceptions to ignore rules
 !**/src/main/**/target/
