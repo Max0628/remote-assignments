@@ -14,7 +14,7 @@ build/
 !.mvn/wrapper/maven-wrapper.jar
 
 # Configuration files
-*.properties
+
 
 # Log files
 *.log
