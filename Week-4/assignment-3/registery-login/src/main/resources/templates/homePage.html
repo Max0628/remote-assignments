@@ -9,7 +9,8 @@
     <form action="/login" method="POST">
         <div id="login">
             <h1>Login</h1>
-            <h3>Make sure your email and password are correct</h3>
+            <h2 th:text="${loginText}"></h2>
+            <p>Make sure your email and password are correct</p>
             <label for="loginEmail">Email</label>
             <input type="email" id="loginEmail" name="email" required/>
             <label for="loginPassword">Password</label>
@@ -21,7 +22,8 @@
     <form action="/register" method="POST">
         <div id="register">
             <h1>Sign-up</h1>
-            <h3>If you don't have an account, please Sign up first</h3>
+            <h2 th:text="${registerText}"></h2>
+            <p>If you don't have an account, please Sign up first</p>
             <label for="signupEmail">Email</label>
             <input type="email" id="signupEmail" name="email" required/>
             <label for="signupPassword">Password</label>
