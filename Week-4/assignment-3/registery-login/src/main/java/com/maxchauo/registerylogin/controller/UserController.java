@@ -1,13 +1,12 @@
 package com.maxchauo.registerylogin.controller;
-
 import com.maxchauo.registerylogin.dto.UserDto;
 import com.maxchauo.registerylogin.model.User;
 import com.maxchauo.registerylogin.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.servlet.view.RedirectView;
 
 
 @Controller
@@ -21,39 +20,36 @@ public class UserController {
         return "homePage";
     }
 
-    @GetMapping("/memberPage")
-    public String memberPage() {
-        return "memberPage";
-    }
-
-
     @PostMapping("/register")
-    public RedirectView createUser(UserDto userDto) {
+    public String createUser(UserDto userDto, Model model) {
         User duplicatedUser = userService.getUserByEmail(userDto.getEmail());
         if (duplicatedUser != null) {
-            return new RedirectView("/");
+            model.addAttribute("registerText", "Your email is already registered!!");
+            return "homePage";
         }
 
         User newUser = userService.createUser(userDto.getEmail(), userDto.getPassword());
         if (newUser != null) {
-            return new RedirectView("/memberPage");
+            model.addAttribute("entered", "You registered successfully!");
+            return "memberPage";
         } else {
-            return new RedirectView("/");
+            model.addAttribute("registerText", "Create user failed " + userDto.getEmail());
+            return "homePage";
         }
     }
 
 
     @PostMapping("/login")
-    public RedirectView getUser(UserDto userDto) {
+    public String getUser(UserDto userDto, Model model) {
         User existingUser = userService.authenticateUser(userDto.getEmail(), userDto.getPassword());
         if (existingUser == null) {
-            return new RedirectView("/");
+            model.addAttribute("loginText", "User does not exist or wrong password!! " + userDto.getEmail());
+            return "homePage";
         } else {
-            return new RedirectView("/memberPage");
+            model.addAttribute("entered", "You login successfully!! " + userDto.getEmail());
+            return "memberPage";
         }
     }
-
-
 }
 
 
