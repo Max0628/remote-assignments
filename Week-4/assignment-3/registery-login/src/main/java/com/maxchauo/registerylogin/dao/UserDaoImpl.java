@@ -33,9 +33,9 @@ public class UserDaoImpl implements UserDao {
                     String getPassword = resultSet.getString("password");
                     return new User(getId, getEmail, getPassword);
                 }
-            }   //mark the exception to SQLException type,
+            }   //Mark the exception to SQLException type.
         } catch (SQLException e) {
-            //print out the details of SQLException
+            //Print out the details of SQLException.
             System.out.println(e.getMessage());
         }
         return null;
@@ -45,16 +45,16 @@ public class UserDaoImpl implements UserDao {
     public User createUser(String email, String password) {
         String createUserSQL = "INSERT INTO user (email, password) VALUES (?, ?)";
         try (Connection connection = DriverManager.getConnection(URL, USERNAME, PASSWORD);
-             //RETURN_GENERATE_KEY：After insertion,return mysql autoincrement value,it's a constant code,not number
+             //RETURN_GENERATE_KEY：After insertion,return mysql autoincrement value,it's a constant code,not number.
              PreparedStatement statement = connection.prepareStatement(createUserSQL, Statement.RETURN_GENERATED_KEYS)) {
 
             statement.setString(1, email);
             statement.setString(2, password);
             statement.executeUpdate();
-            //get auto increment value
+            //Get auto increment value.
             try (ResultSet resultSet = statement.getGeneratedKeys()) {
-                //cursor get next line,because we only need to find one data,so can use if
-                //if we need to find more than one data in db,need to use while loop
+                //Cursor get next line,because we only need to find one data.
+                //If we need to find more than one data in db,need to use while loop.
                 if (resultSet.next()) {
                     int newId = resultSet.getInt(1);
                     System.out.println(newId);
