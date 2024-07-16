@@ -1,3 +1,4 @@
+//don't modify spec!!!
 async function ajax(src, callback) {
   try {
     let response = await fetch(src);
