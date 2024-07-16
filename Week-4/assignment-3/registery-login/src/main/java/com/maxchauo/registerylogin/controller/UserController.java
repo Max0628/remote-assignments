@@ -24,13 +24,13 @@ public class UserController {
     public String createUser(UserDto userDto, Model model) {
         User duplicatedUser = userService.getUserByEmail(userDto.getEmail());
         if (duplicatedUser != null) {
-            model.addAttribute("registerText", "Your email is already registered!!");
+            model.addAttribute("registerText", "Your email is already registered!!"+userDto.getEmail());
             return "homePage";
         }
 
         User newUser = userService.createUser(userDto.getEmail(), userDto.getPassword());
         if (newUser != null) {
-            model.addAttribute("entered", "You registered successfully!");
+            model.addAttribute("entered", "You registered successfully!" + userDto.getEmail());
             return "memberPage";
         } else {
             model.addAttribute("registerText", "Create user failed " + userDto.getEmail());
