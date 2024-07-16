@@ -1,9 +1,11 @@
-async function ajax(callback) {
-  let response = await fetch(
-    "https://remote-assignment.s3.ap-northeast-1.amazonaws.com/products"
-  );
-  let data = await response.json();
-  callback(data);
+async function ajax(src, callback) {
+  try {
+    let response = await fetch(src);
+    let data = await response.json();
+    callback(data);
+  } catch (error) {
+    console.log("Error fetching: " + error);
+  }
 }
 
 function render(data) {
@@ -22,4 +24,9 @@ function render(data) {
   }
 }
 
-ajax(render);
+ajax(
+  "https://remote-assignment.s3.ap-northeast-1.amazonaws.com/products",
+  function (response) {
+    render(response);
+  }
+);
